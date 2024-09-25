@@ -3,5 +3,5 @@ theme:
   name: "material"
 nav:
   - Home: index.html
-  - Ingredients: ingredients.md
-  - Instructions: instructions.md
+  - Assets: assets.md
+  - Story: story.md
