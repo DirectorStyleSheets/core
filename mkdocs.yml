@@ -1,0 +1,7 @@
+site_name: DSS Core Spec
+theme:
+  name: "material"
+nav:
+  - Home: index.html
+  - Ingredients: ingredients.md
+  - Instructions: instructions.md
