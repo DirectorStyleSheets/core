@@ -1,7 +1,17 @@
 site_name: DSS Core Spec
 theme:
   name: "material"
+markdown_extensions:
+  - admonition
 nav:
   - Home: index.html
-  - Assets: assets.md
-  - Story: story.md
+  - Assets:
+      - Overview: assets/assets.md
+      - Audio: assets/audio.md
+      - Characters: assets/characters.md
+      - Sets: assets/sets.md
+  - Story:
+      - Overview: story/story.md
+      - Cameras: story/cameras.md
+      - Characters: story/characters.md
+      - Scenes: story/scenes.md
