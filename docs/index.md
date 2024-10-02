@@ -19,17 +19,17 @@ DSS is a framework that attempts to solve these problems by defining a standard 
 
 ## Breakdown
 
-We separate out 2 core concepts of the standard, defined by [assets](#assets) and [story](#story). These pieces can be thought of as the ingredients to a meal (_assets_) and the instructions that declare how these come together (_story_).
+We separate out 2 core concepts of the standard, defined by [assets](#assets) and [storyline](#storyline). These pieces can be thought of as the ingredients to a meal (_assets_) and the instructions that declare how these come together (_storyline_).
 
 ### Assets
 
-The _assets_ structure is where all of your created content and accomponying information sit. Character model files, dialog audio, sound effects, sets, and more. These components will be referenced by the _story_ structure to create your true masterpiece.
+The _assets_ structure is where all of your created content and accomponying information sit. Character model files, dialog audio, sound effects, sets, and more. These components will be referenced by the _storyline_ structure to create your true masterpiece.
 
 Dig into the assets definition here.
 
-### Story
+### Storyline
 
-The _story_ structure is designed to be a timeline of commands that any renderer could implement to display your story.
+The _storyline_ structure is designed to be a timeline of commands that any renderer could implement to display your story.
 
 Explore the usable commands here.
 

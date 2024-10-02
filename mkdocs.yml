@@ -10,8 +10,8 @@ nav:
       - Audio: assets/audio.md
       - Characters: assets/characters.md
       - Sets: assets/sets.md
-  - Story:
-      - Overview: story/story.md
-      - Cameras: story/cameras.md
-      - Characters: story/characters.md
-      - Scenes: story/scenes.md
+  - Storyline:
+      - Overview: storyline/storyline.md
+      - Cameras: storyline/cameras.md
+      - Characters: storyline/characters.md
+      - Scenes: storyline/scenes.md
