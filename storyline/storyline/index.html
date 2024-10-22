@@ -494,7 +494,28 @@
 
   <h1>Overview</h1>
 
-
+<p>The <code>Storyline</code> is a structure that any renderer can use to play a story. This structure is defined as a timeline of commands that reference the <a href="../../assets/assets/"><code>Asset</code></a> structure for any required components.</p>
+<p>This structure starts with a base object and some organizational components as seen in the example below.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="err">sce</span><span class="kc">nes</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">            </span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="err">descrip</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="err">comma</span><span class="kc">n</span><span class="err">dGroups</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">                </span><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">                    </span><span class="kc">t</span><span class="err">imes</span><span class="kc">ta</span><span class="err">mp</span><span class="p">:</span><span class="w"> </span><span class="err">Op</span><span class="kc">t</span><span class="err">io</span><span class="kc">nal</span><span class="err">&lt;</span><span class="kc">fl</span><span class="err">oa</span><span class="kc">t</span><span class="err">&gt;</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">                    </span><span class="err">comma</span><span class="kc">n</span><span class="err">ds</span><span class="p">:</span><span class="w"> </span><span class="err">Lis</span><span class="kc">t</span><span class="err">&lt;DSSComma</span><span class="kc">n</span><span class="err">d&gt;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">                </span><span class="p">}</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">            </span><span class="p">]</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">}</span>
+</code></pre></div>
+<p>In further doc iterations, these object references will become more crystalized. But currently, the important information is:</p>
+<ul>
+<li>If a timestamp if <code>null</code>, it will be played directly after the previous command.</li>
+<li>DSSCommand will be the base type of all commands</li>
+</ul>
 
 
 
